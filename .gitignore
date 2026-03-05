@@ -1,0 +1,50 @@
+# OpenClaw Configuration Backup - Git Ignore Rules
+
+# Sensitive directories (never commit these)
+devices/
+credentials/
+cron/
+
+# Sensitive files
+exec-approvals.json
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
+
+# Node modules and build artifacts
+node_modules/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Workspace state (auto-generated)
+.openclaw/workspace-state.json
+
+# Note: We WILL commit configuration files like openclaw.json
+# but we need to sanitize them first (remove API keys)
